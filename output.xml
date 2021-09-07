@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210907 16:22:15.383" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcase" source="C:\Users\user\PycharmProjects\RobotAssignment\RobotFramework\testcase.robot">
+<test id="s1-t1" name="Observe User able to open the browser and log into flipkart">
+<kw name="Given User launch browser for Google">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210907 16:22:15.685" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20210907 16:22:15.685" endtime="20210907 16:22:19.106"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210907 16:22:19.107" endtime="20210907 16:22:19.260"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:15.685" endtime="20210907 16:22:19.261"/>
+</kw>
+<kw name="Then User clicks on searchbar and type as Flipkart">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${Google input text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:19.264" level="INFO">Typing text 'Flipkart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20210907 16:22:19.262" endtime="20210907 16:22:19.386"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:22.390" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:19.386" endtime="20210907 16:22:22.390"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name:btnK</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:22.390" level="INFO">Clicking button 'name:btnK'.</msg>
+<status status="PASS" starttime="20210907 16:22:22.390" endtime="20210907 16:22:25.607"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:19.261" endtime="20210907 16:22:25.608"/>
+</kw>
+<kw name="Then User clicks on Flipkart Link">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210907 16:22:25.610" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3'.</msg>
+<status status="PASS" starttime="20210907 16:22:25.609" endtime="20210907 16:22:25.906"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:25.906" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3'.</msg>
+<status status="PASS" starttime="20210907 16:22:25.906" endtime="20210907 16:22:28.072"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:25.609" endtime="20210907 16:22:28.073"/>
+</kw>
+<kw name="Then User Enters mobile number and password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${mobile no}</arg>
+<arg>8073645438</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:28.078" level="INFO">Typing text '8073645438' into text field 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20210907 16:22:28.073" endtime="20210907 16:22:28.270"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>Qbhbhhfhbb</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:28.270" level="INFO">Typing text 'Qbhbhhfhbb' into text field 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20210907 16:22:28.270" endtime="20210907 16:22:28.396"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:28.396" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20210907 16:22:28.396" endtime="20210907 16:22:28.508"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:32.523" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:28.508" endtime="20210907 16:22:32.523"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:28.073" endtime="20210907 16:22:32.523"/>
+</kw>
+<tag>End to End Non Functional Sanity White Box</tag>
+<status status="PASS" starttime="20210907 16:22:15.685" endtime="20210907 16:22:32.523"/>
+</test>
+<test id="s1-t2" name="Observe user able to open Electronic section">
+<kw name="And Clicks on Electronics section and opens it">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Electronics}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210907 16:22:32.530" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img'.</msg>
+<status status="PASS" starttime="20210907 16:22:32.530" endtime="20210907 16:22:32.904"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:35.909" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:32.905" endtime="20210907 16:22:35.909"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:32.530" endtime="20210907 16:22:35.909"/>
+</kw>
+<kw name="Then Clicks on Laptop and Desktop Field and opens it">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>link:Gaming</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210907 16:22:35.909" level="INFO">Simulating Mouse Over on element 'link:Gaming'.</msg>
+<status status="PASS" starttime="20210907 16:22:35.909" endtime="20210907 16:22:36.469"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link:Gaming</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:36.469" level="INFO">Clicking link 'link:Gaming'.</msg>
+<status status="PASS" starttime="20210907 16:22:36.469" endtime="20210907 16:22:36.854"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:39.861" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:36.855" endtime="20210907 16:22:39.861"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:35.909" endtime="20210907 16:22:39.862"/>
+</kw>
+<kw name="Then Click on desire device of any electronics product">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:39.865" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[2]/div/a[2]'.</msg>
+<status status="PASS" starttime="20210907 16:22:39.864" endtime="20210907 16:22:40.190"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:43.190" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:40.190" endtime="20210907 16:22:43.190"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210907 16:22:43.190" endtime="20210907 16:22:43.217"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:46.222" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:43.217" endtime="20210907 16:22:46.222"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:39.862" endtime="20210907 16:22:46.224"/>
+</kw>
+<tag>End to End Non Functional Sanity White Box</tag>
+<status status="PASS" starttime="20210907 16:22:32.530" endtime="20210907 16:22:46.224"/>
+</test>
+<test id="s1-t3" name="Observe User able to add the device into the cart">
+<kw name="And Adds to cart">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210907 16:22:46.229" level="INFO">Executing JavaScript:
+window.scrollTo(0,300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210907 16:22:46.229" endtime="20210907 16:22:46.325"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Add to Cart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:46.327" level="INFO">Clicking button 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
+<status status="PASS" starttime="20210907 16:22:46.326" endtime="20210907 16:22:46.608"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:49.626" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:46.609" endtime="20210907 16:22:49.627"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:46.229" endtime="20210907 16:22:49.627"/>
+</kw>
+<tag>End to End Non Functional Sanity White Box</tag>
+<status status="PASS" starttime="20210907 16:22:46.229" endtime="20210907 16:22:49.627"/>
+</test>
+<test id="s1-t4" name="Check whether device is in cart">
+<kw name="Then Go to Homepage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:_2xm1JU</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:49.637" level="INFO">Clicking element 'class:_2xm1JU'.</msg>
+<status status="PASS" starttime="20210907 16:22:49.634" endtime="20210907 16:22:49.847"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:22:52.857" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:49.847" endtime="20210907 16:22:52.858"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:49.634" endtime="20210907 16:22:52.858"/>
+</kw>
+<kw name="And Check and Verify device is in cart or not">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:_3SkBxJ</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210907 16:22:52.858" level="INFO">Clicking element 'class:_3SkBxJ'.</msg>
+<status status="PASS" starttime="20210907 16:22:52.858" endtime="20210907 16:22:53.085"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210907 16:23:03.088" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210907 16:22:53.085" endtime="20210907 16:23:03.088"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210907 16:23:03.088" endtime="20210907 16:23:05.380"/>
+</kw>
+<status status="PASS" starttime="20210907 16:22:52.858" endtime="20210907 16:23:05.381"/>
+</kw>
+<tag>End to End Non Functional Sanity White Box</tag>
+<status status="PASS" starttime="20210907 16:22:49.633" endtime="20210907 16:23:05.382"/>
+</test>
+<status status="PASS" starttime="20210907 16:22:15.386" endtime="20210907 16:23:05.388"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">End to End Non Functional Sanity White Box</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
