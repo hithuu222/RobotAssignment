@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210907 16:22:15.383" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210927 14:46:05.590" rpa="false" schemaversion="2">
 <suite id="s1" name="Testcase" source="C:\Users\user\PycharmProjects\RobotAssignment\RobotFramework\testcase.robot">
 <test id="s1-t1" name="Observe User able to open the browser and log into flipkart">
 <kw name="Given User launch browser for Google">
@@ -7,226 +7,156 @@
 <arg>${Url}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210907 16:22:15.685" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
-<status status="PASS" starttime="20210907 16:22:15.685" endtime="20210907 16:22:19.106"/>
+<msg timestamp="20210927 14:46:06.257" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20210927 14:46:06.257" endtime="20210927 14:46:09.471"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210907 16:22:19.107" endtime="20210907 16:22:19.260"/>
+<status status="PASS" starttime="20210927 14:46:09.471" endtime="20210927 14:46:09.595"/>
 </kw>
-<status status="PASS" starttime="20210907 16:22:15.685" endtime="20210907 16:22:19.261"/>
+<status status="PASS" starttime="20210927 14:46:06.256" endtime="20210927 14:46:09.595"/>
 </kw>
 <kw name="Then User clicks on searchbar and type as Flipkart">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:q</arg>
 <arg>${Google input text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:19.264" level="INFO">Typing text 'Flipkart' into text field 'name:q'.</msg>
-<status status="PASS" starttime="20210907 16:22:19.262" endtime="20210907 16:22:19.386"/>
+<msg timestamp="20210927 14:46:09.599" level="INFO">Typing text 'Flipkart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20210927 14:46:09.598" endtime="20210927 14:46:09.757"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:22.390" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:19.386" endtime="20210907 16:22:22.390"/>
+<msg timestamp="20210927 14:46:12.764" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210927 14:46:09.757" endtime="20210927 14:46:12.764"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name:btnK</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:22.390" level="INFO">Clicking button 'name:btnK'.</msg>
-<status status="PASS" starttime="20210907 16:22:22.390" endtime="20210907 16:22:25.607"/>
+<msg timestamp="20210927 14:46:12.764" level="INFO">Clicking button 'name:btnK'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210927 14:46:12.947" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210927 14:46:12.814" endtime="20210927 14:46:12.947"/>
 </kw>
-<status status="PASS" starttime="20210907 16:22:19.261" endtime="20210907 16:22:25.608"/>
+<msg timestamp="20210927 14:46:13.008" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=93.0.4577.82)
+</msg>
+<status status="FAIL" starttime="20210927 14:46:12.764" endtime="20210927 14:46:13.009"/>
+</kw>
+<status status="FAIL" starttime="20210927 14:46:09.598" endtime="20210927 14:46:13.009"/>
 </kw>
 <kw name="Then User clicks on Flipkart Link">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20210907 16:22:25.610" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3'.</msg>
-<status status="PASS" starttime="20210907 16:22:25.609" endtime="20210907 16:22:25.906"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:25.906" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3'.</msg>
-<status status="PASS" starttime="20210907 16:22:25.906" endtime="20210907 16:22:28.072"/>
-</kw>
-<status status="PASS" starttime="20210907 16:22:25.609" endtime="20210907 16:22:28.073"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.010" endtime="20210927 14:46:13.010"/>
 </kw>
 <kw name="Then User Enters mobile number and password">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${mobile no}</arg>
-<arg>8073645438</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:28.078" level="INFO">Typing text '8073645438' into text field 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20210907 16:22:28.073" endtime="20210907 16:22:28.270"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${password}</arg>
-<arg>Qbhbhhfhbb</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:28.270" level="INFO">Typing text 'Qbhbhhfhbb' into text field 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20210907 16:22:28.270" endtime="20210907 16:22:28.396"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${Submit}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:28.396" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button'.</msg>
-<status status="PASS" starttime="20210907 16:22:28.396" endtime="20210907 16:22:28.508"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>4</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:32.523" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:28.508" endtime="20210907 16:22:32.523"/>
-</kw>
-<status status="PASS" starttime="20210907 16:22:28.073" endtime="20210907 16:22:32.523"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.010" endtime="20210927 14:46:13.010"/>
 </kw>
 <tag>End to End Non Functional Sanity White Box</tag>
-<status status="PASS" starttime="20210907 16:22:15.685" endtime="20210907 16:22:32.523"/>
+<status status="FAIL" starttime="20210927 14:46:06.254" endtime="20210927 14:46:13.011">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=93.0.4577.82)
+</status>
 </test>
 <test id="s1-t2" name="Observe user able to open Electronic section">
 <kw name="And Clicks on Electronics section and opens it">
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${Electronics}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20210907 16:22:32.530" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img'.</msg>
-<status status="PASS" starttime="20210907 16:22:32.530" endtime="20210907 16:22:32.904"/>
+<msg timestamp="20210927 14:46:13.013" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210927 14:46:13.164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210927 14:46:13.026" endtime="20210927 14:46:13.165"/>
+</kw>
+<msg timestamp="20210927 14:46:13.183" level="FAIL">Element with locator 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img' not found.</msg>
+<status status="FAIL" starttime="20210927 14:46:13.013" endtime="20210927 14:46:13.183"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:35.909" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:32.905" endtime="20210907 16:22:35.909"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.185" endtime="20210927 14:46:13.185"/>
 </kw>
-<status status="PASS" starttime="20210907 16:22:32.530" endtime="20210907 16:22:35.909"/>
+<status status="FAIL" starttime="20210927 14:46:13.012" endtime="20210927 14:46:13.186"/>
 </kw>
 <kw name="Then Clicks on Laptop and Desktop Field and opens it">
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>link:Gaming</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20210907 16:22:35.909" level="INFO">Simulating Mouse Over on element 'link:Gaming'.</msg>
-<status status="PASS" starttime="20210907 16:22:35.909" endtime="20210907 16:22:36.469"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>link:Gaming</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:36.469" level="INFO">Clicking link 'link:Gaming'.</msg>
-<status status="PASS" starttime="20210907 16:22:36.469" endtime="20210907 16:22:36.854"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:39.861" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:36.855" endtime="20210907 16:22:39.861"/>
-</kw>
-<status status="PASS" starttime="20210907 16:22:35.909" endtime="20210907 16:22:39.862"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.187" endtime="20210927 14:46:13.187"/>
 </kw>
 <kw name="Then Click on desire device of any electronics product">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${product}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:39.865" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[2]/div/a[2]'.</msg>
-<status status="PASS" starttime="20210907 16:22:39.864" endtime="20210907 16:22:40.190"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:43.190" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:40.190" endtime="20210907 16:22:43.190"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>locator=NEW</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210907 16:22:43.190" endtime="20210907 16:22:43.217"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:46.222" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:43.217" endtime="20210907 16:22:46.222"/>
-</kw>
-<status status="PASS" starttime="20210907 16:22:39.862" endtime="20210907 16:22:46.224"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.187" endtime="20210927 14:46:13.187"/>
 </kw>
 <tag>End to End Non Functional Sanity White Box</tag>
-<status status="PASS" starttime="20210907 16:22:32.530" endtime="20210907 16:22:46.224"/>
+<status status="FAIL" starttime="20210927 14:46:13.012" endtime="20210927 14:46:13.188">Element with locator 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[1]/div/img' not found.</status>
 </test>
 <test id="s1-t3" name="Observe User able to add the device into the cart">
 <kw name="And Adds to cart">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0,300)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210907 16:22:46.229" level="INFO">Executing JavaScript:
+<msg timestamp="20210927 14:46:13.191" level="INFO">Executing JavaScript:
 window.scrollTo(0,300)
 Without any arguments.</msg>
-<status status="PASS" starttime="20210907 16:22:46.229" endtime="20210907 16:22:46.325"/>
+<status status="PASS" starttime="20210927 14:46:13.190" endtime="20210927 14:46:13.196"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Add to Cart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:46.327" level="INFO">Clicking button 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
-<status status="PASS" starttime="20210907 16:22:46.326" endtime="20210907 16:22:46.608"/>
+<msg timestamp="20210927 14:46:13.197" level="INFO">Clicking button 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210927 14:46:13.343" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210927 14:46:13.215" endtime="20210927 14:46:13.343"/>
+</kw>
+<msg timestamp="20210927 14:46:13.345" level="FAIL">Button with locator 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button' not found.</msg>
+<status status="FAIL" starttime="20210927 14:46:13.196" endtime="20210927 14:46:13.345"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:49.626" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:46.609" endtime="20210907 16:22:49.627"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.346" endtime="20210927 14:46:13.346"/>
 </kw>
-<status status="PASS" starttime="20210907 16:22:46.229" endtime="20210907 16:22:49.627"/>
+<status status="FAIL" starttime="20210927 14:46:13.190" endtime="20210927 14:46:13.346"/>
 </kw>
 <tag>End to End Non Functional Sanity White Box</tag>
-<status status="PASS" starttime="20210907 16:22:46.229" endtime="20210907 16:22:49.627"/>
+<status status="FAIL" starttime="20210927 14:46:13.189" endtime="20210927 14:46:13.347">Button with locator 'xpath=//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button' not found.</status>
 </test>
 <test id="s1-t4" name="Check whether device is in cart">
 <kw name="Then Go to Homepage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class:_2xm1JU</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:49.637" level="INFO">Clicking element 'class:_2xm1JU'.</msg>
-<status status="PASS" starttime="20210907 16:22:49.634" endtime="20210907 16:22:49.847"/>
+<msg timestamp="20210927 14:46:13.350" level="INFO">Clicking element 'class:_2xm1JU'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210927 14:46:13.478" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210927 14:46:13.362" endtime="20210927 14:46:13.478"/>
+</kw>
+<msg timestamp="20210927 14:46:13.479" level="FAIL">Element with locator 'class:_2xm1JU' not found.</msg>
+<status status="FAIL" starttime="20210927 14:46:13.350" endtime="20210927 14:46:13.479"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:22:52.857" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:49.847" endtime="20210907 16:22:52.858"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.480" endtime="20210927 14:46:13.480"/>
 </kw>
-<status status="PASS" starttime="20210907 16:22:49.634" endtime="20210907 16:22:52.858"/>
+<status status="FAIL" starttime="20210927 14:46:13.350" endtime="20210927 14:46:13.481"/>
 </kw>
 <kw name="And Check and Verify device is in cart or not">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class:_3SkBxJ</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210907 16:22:52.858" level="INFO">Clicking element 'class:_3SkBxJ'.</msg>
-<status status="PASS" starttime="20210907 16:22:52.858" endtime="20210907 16:22:53.085"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210907 16:23:03.088" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20210907 16:22:53.085" endtime="20210907 16:23:03.088"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210907 16:23:03.088" endtime="20210907 16:23:05.380"/>
-</kw>
-<status status="PASS" starttime="20210907 16:22:52.858" endtime="20210907 16:23:05.381"/>
+<status status="NOT RUN" starttime="20210927 14:46:13.482" endtime="20210927 14:46:13.482"/>
 </kw>
 <tag>End to End Non Functional Sanity White Box</tag>
-<status status="PASS" starttime="20210907 16:22:49.633" endtime="20210907 16:23:05.382"/>
+<status status="FAIL" starttime="20210927 14:46:13.349" endtime="20210927 14:46:13.482">Element with locator 'class:_2xm1JU' not found.</status>
 </test>
-<status status="PASS" starttime="20210907 16:22:15.386" endtime="20210907 16:23:05.388"/>
+<status status="FAIL" starttime="20210927 14:46:05.601" endtime="20210927 14:46:13.485"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="4" fail="0" skip="0">End to End Non Functional Sanity White Box</stat>
+<stat pass="0" fail="4" skip="0">End to End Non Functional Sanity White Box</stat>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="0" fail="4" skip="0" id="s1" name="Testcase">Testcase</stat>
 </suite>
 </statistics>
 <errors>
