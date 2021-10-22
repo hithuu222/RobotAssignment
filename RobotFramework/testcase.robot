@@ -56,23 +56,21 @@ Click on your desire device of any electronics accessories
     click element  class:_4rR01T
     Sleep  4
     switch window  locator=NEW
-    Sleep  4
-
+    Sleep  3
 Add to cart
     Execute JavaScript    window.scrollTo(0,300)
     click button  xpath://*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button
-    Sleep  4
+    Sleep  3
 
 Go to homepage
     click element   class:_2xm1JU
-    Sleep  4
+    Sleep  3
 
 Check and verify device is in cart or not
     Wait Until Page Contains  Cart  timeout=20s
     click element   class:_3SkBxJ
-    Sleep  5
+    Sleep  3
     Close Browser
-
 
 *** Variables ***
 ${Url}      https://www.google.com/
